@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>七夕言情</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pageA.css">
+    <link rel="stylesheet" href="css/pageB.css">
+    <link rel="stylesheet" href="css/pageC.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.transt.js"></script>
+
+</head>
+
+<body>
+    <section class='container'>
+        <section class='page-a bg-adaptive'>
+            <figure class='cloudy'></figure>
+            <figure class='moon'></figure>
+            <figure class='tree'></figure>
+            <div class='chs-boy chs-boy-deer'></div>
+            <div class='window'>
+                <div class='window-bg'></div>
+                <div class='window-content'>
+                    <div class='window-left'></div>
+                    <div class='window-right'></div>
+                </div>
+            </div>
+        </section>
+        <section class='page-b bg-adaptive'>
+            <div class="cat"></div>
+            <div class="christmas-boy-head"></div>
+            <div class='boy boy-walk'></div>
+            <div class='girl '></div>
+            <div id='carousel'>
+                <figure id='spinner'>
+                    <figure>
+                        <img src="./images/carousel/1.png" alt="" style="width:100%;height:100%;"></figure>
+                    <figure>
+                        <img src="./images/carousel/3.png" alt="" style="width:100%;height:100%;"></figure>
+                    <figure>
+                        <img src="./images/carousel/2.png" alt="" style="width:100%;height:100%;"></figure>
+                </figure>
+            </div>
+            <div></div>
+            <div></div>
+        </section>
+        <section class='page-c bg-adaptive'>
+            <figure class='cloudy'></figure>
+            <figure class='moon'></figure>
+            <figure class='tree'></figure>
+            <div class='deer chs-deer'></div>
+            <div class='window-c'>
+                <div class='window-scene-bg'></div>
+                <div class='window-close-bg'></div>
+                <div class='window-content-c'>
+                    <div class='window-left-c'></div>
+                    <div class='window-right-c'></div>
+                </div>
+            </div>
+        </section>
+        <canvas id='snowflake'></canvas>
+    </section>
+    <video ></video>
+</body>
+
+    <script type="text/javascript">
+
+var doc = document;
+var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function() {
+        //自适应设置容器高度
+        var container = document.querySelector(".container")
+            //原始比例
+        var proportion = 900 / 1600;
+        container.style.height = document.documentElement.clientHeight + 'px' ;
+    };
+window.addEventListener(resizeEvt, recalc, false);
+doc.addEventListener('DOMContentLoaded', recalc, false);
+
+</script>
+    <script src="js/pageA.js"></script>
+    <script src="js/pageB.js"></script>
+    <script src="js/pageC.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/Observer.js"></script>
+    <script src="js/snowflake.js"></script>
+    <script src="js/chrismas.js"></script>
+</html>

@@ -1,0 +1,271 @@
+
+/**
+ * 猫与书
+ */
+
+.cat{
+    width: 8rem;
+    height: 6rem;
+    position: absolute;
+    left: 18rem;
+    bottom: 12.5rem;
+    background-size: 100% 100%;
+    background-image: url(../images/b/cat.png);
+}
+/**
+ * 圣诞小男孩
+ */
+
+.boy{
+	width: 15rem;
+	height: 18rem;
+	position: absolute;
+	right: -20rem;
+	bottom: 5rem;
+	background-size: 1500% 100%;
+	background-image: url(../images/b/boy.png);
+}
+
+
+/**
+ * 男孩走路动作
+ */
+
+.boy-walk{
+	-webkit-animation:boyWalk 0.75s steps(4) infinite;
+}
+
+@-webkit-keyframes boyWalk{
+	0%{background-position: 0 100%;}
+	100%{background-position: -400% 100%;}
+}
+
+.walk-stop {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+}
+
+.walk-run {
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+}
+
+
+
+/**
+ * 脱衣动作
+ */
+
+.boy-strip-1 {
+    background-position: -800% 100%;
+}
+
+.boy-strip-2 {
+    background-position: -900% 100%;
+}
+
+.boy-strip-3 {
+    background-position: -1000% 100%;
+}
+
+
+/**
+ * 站立动作
+ */
+
+.boy-stand {
+    background-position: -400% 100%;
+}
+
+
+/**
+ * 打开包裹
+ */
+
+.boy-unwrapp {
+    -webkit-animation: unwrapp 2s steps(2, end) 1 forwards;
+    -moz-animation: unwrapp 2s steps(2, end) 1 forwards;
+}
+
+@-webkit-keyframes unwrapp {
+    0% {
+        background-position: -400% 100%;
+    }
+    100% {
+        background-position: -600% 100%;
+    }
+}
+
+@-moz-keyframes unwrapp {
+    0% {
+        background-position: -400% 100%;
+    }
+    100% {
+        background-position: -600% 100%;
+    }
+}
+
+
+/**
+ * 男孩拥抱
+ */
+
+.boy-hug {
+    -webkit-animation: boyHug 1s steps(3, end) 1 forwards;
+    -moz-animation: boyHug 1s steps(3, end) 1 forwards;
+}
+
+@-webkit-keyframes boyHug {
+    0% {
+        background-position: -1000% 100%;
+    }
+    100% {
+        background-position: -1300% 100%;
+    }
+}
+
+@-moz-keyframes boyHug {
+    0% {
+        background-position: -1000% 100%;
+    }
+    100% {
+        background-position: -1300% 100%;
+    }
+}
+
+
+/**
+ * 男孩头部
+ */
+
+.christmas-boy-head {
+    right: 23.5rem;
+    bottom: 5rem;
+    width: 15rem;
+    height: 18rem;
+    position: absolute;
+    z-index: 88;
+    background: url(http://img.mukewang.com/565d09870001372152510407.png);
+    background-size: 1400% 100%;
+    background-position: -1300% 100%;
+    display: none;
+}
+
+
+/**
+ * 圣诞小女孩
+ */
+
+ .girl{
+ 	width: 15rem;
+	height: 18rem;
+	position: absolute;
+	left: 7rem;
+	bottom: 8rem;
+	background-size: 2100% 100%;
+	background-image: url(../images/b/girl.png);	
+ }
+
+ .girl-standUp{
+ 	-webkit-animation:girlstandUp 0.5s steps(3,start) forwards;
+ }
+
+ @keyframes girlstandUp{
+ 	0%{background-position: 0 100%}
+ 	100%{background-position: -300% 100%;bottom: 5rem;}
+ }
+
+ .girl-throwBook{
+    bottom: 5rem;
+    -webkit-animation: throwBook 300ms steps(2, start) forwards;
+ }
+
+ @-webkit-keyframes throwBook {
+    0% {
+        background-position: -300% 100%;
+    }
+    100% {
+        background-position: -500% 100%;
+    }
+}
+
+ .girl-walk{
+    bottom: 5rem;
+    -webkit-animation:girlWalk 1s steps(4,start) infinite;
+ }
+
+ @keyframes girlWalk{
+    0%{background-position: -500% 100%}
+    100%{background-position: -900% 100%}
+ }
+
+.girl-stand{
+    bottom: 5rem;
+    background-position: -1000% 100%;
+}
+
+ .girl-choose{
+    -webkit-animation:girlChoose 1s steps(2,end) forwards;
+ }
+
+@keyframes girlChoose{
+    0%{background-position: -1000% 100%}
+    100%{background-position: -1200% 100%}
+ }
+
+.girl-weepWalk {
+    -webkit-animation: girlWeep 450ms steps(4, end)  infinite;
+    -moz-animation: girlWeep 450ms steps(4, end)  infinite;
+}
+
+@-webkit-keyframes girlWeep {
+    0% {
+        background-position: -1300% 100%;
+    }
+    100% {
+        background-position: -1700% 100%;
+    }
+}
+
+.girl-hug {
+    -webkit-animation: girlHug 450ms steps(3, end) forwards;
+    -moz-animation: girlHug 450ms steps(3, end) forwards;
+}
+
+@-webkit-keyframes girlHug {
+    0% {
+        background-position: -1700% 100%;
+    }
+    100% {
+        background-position: -2000% 100%;
+    }
+}
+
+#carousel{
+    perspective: 500px; 
+    position: absolute; 
+    right: 36rem; 
+    bottom: 17rem;
+    display: none;
+}
+
+#spinner{
+    height: 4rem;
+    width: 8rem; 
+    transform-style: preserve-3d;
+}
+
+#spinner figure{
+    width:8rem;
+    transform:rotateY(0deg) ;
+    position:absolute;
+}
+
+video{
+    width:50%;
+    height:50%;
+    position:absolute;
+    left:30%;
+    top:35%;
+    z-index: 999;
+}

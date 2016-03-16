@@ -1,0 +1,64 @@
+header {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    float: left;
+}
+
+header h1 {
+    font-family: Arial;
+    font-size: 55px;
+}
+
+header #newgamebutton {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: #8f7a66;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+header #newgamebutton:hover {
+    background-color: #9f8b77;
+}
+
+header p {
+	font-family: Arial;
+	margin: 20px auto;
+	font-size: 25px;
+}
+
+#container{
+	margin: 50px auto;
+	width: 460px;
+	height: 460px;
+	padding: 20px;
+	background-color: #bbada0;
+	border-radius: 10px;
+	position: relative;
+	float: left;
+}
+
+.grid{
+	width: 100px;
+	height: 100px;
+	background-color: #ccc0b3;
+	border-radius: 5px;
+	position: absolute;
+}
+
+.number-grid{
+	border-radius: 5px;
+	
+	font-family: Arial;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100px;
+	position: absolute;
+}
